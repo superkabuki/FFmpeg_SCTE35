@@ -8,7 +8,6 @@ ffmpeg with the SuperKabuki SCTE-35 pass through patch applied.
 * The patch adds only seven lines of code to two files, libavformat/mpegts.c and libavformat/mpegtsenc.c.
 * Everything else works just like unpatched ffmpeg.
 
-![image](https://github.com/user-attachments/assets/365d971f-3154-4b18-a239-3009c027aae3)
 
 
 
@@ -17,26 +16,31 @@ ffmpeg with the SuperKabuki SCTE-35 pass through patch applied.
 
 ## Install  
 
-in five easy steps.
+
+__This is a tarball out of a stable ffmpeg build with the SuperKabuki SCTE35 patch applied__
 
 
 1.    `git clone https://github.com/superkabuki/FFmpeg_SCTE35.git`
 
 2.    `cd FFmpeg_SCTE35`
+3.     tar -xvjf FFmpegSCTE35.tbz2
+4.     cd FFmpeg_SCTE35
 
-3.    `./configure --enable-shared --extra-version=-SuperKabuki-patch` 
+5.    `./configure --enable-shared --extra-version=-SuperKabuki-patch` 
  
       you can customize configure as needed. <br>
+      I use <br>`./configure --enable-gpl --enable-nonfree --enable-libx264 --enable-libx265 --extra-version=-SuperKabuki-patch`
+
       There are a lot of ffmpeg configure options available. <br>
       __The superkabuki patch doesn't require any special configure options.__
-      
+       
   
 
-4.    `make all` 
+6.    `make all` 
 
   On OpenBSD use `gmake` instead of `make`.
 
-5.    `sudo make install` 
+7.    `sudo make install` 
 
 
 
