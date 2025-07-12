@@ -23,24 +23,23 @@ __This is a tarball out of a stable ffmpeg build with the SuperKabuki SCTE35 pat
 1.    `git clone https://github.com/superkabuki/FFmpeg_SCTE35.git`
 
 2.    `cd FFmpeg_SCTE35`
-3.     tar -xvjf FFmpegSCTE35.tbz2
-4.     cd FFmpeg_SCTE35
+3.     tar -xvjf ffmpeg-scte35.tbz
 
-5.    `./configure --enable-shared --extra-version=-SuperKabuki-patch` 
+
+4.    `./configure --enable-shared --extra-version=-SuperKabuki-patch` 
  
       you can customize configure as needed. <br>
       I use <br>`./configure --enable-gpl --enable-nonfree --enable-libx264 --enable-libx265 --extra-version=-SuperKabuki-patch`
 
       There are a lot of ffmpeg configure options available. <br>
       __The superkabuki patch doesn't require any special configure options.__
-       
-  
+        
 
-6.    `make all` 
+5.    `make all` 
 
   On OpenBSD use `gmake` instead of `make`.
 
-7.    `sudo make install` 
+6.    `sudo make install` 
 
 
 
