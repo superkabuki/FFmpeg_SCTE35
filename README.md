@@ -9,6 +9,7 @@ ffmpeg with the SuperKabuki SCTE-35 pass through patch applied.
 * Everything else works just like unpatched ffmpeg.
 
 
+<img width="1068" height="541" alt="image" src="https://github.com/user-attachments/assets/6554cc61-18c5-4ece-8829-09c6d8f0980f" />
 
 
 ---
@@ -29,7 +30,7 @@ __This is a tarball out of a stable ffmpeg build with the SuperKabuki SCTE35 pat
 4.    `./configure --enable-shared --extra-version=-SuperKabuki-patch` 
  
       you can customize configure as needed. <br>
-      I use <br>`./configure --enable-gpl --enable-nonfree --enable-libx264 --enable-libx265 --extra-version=-SuperKabuki-patch`
+      I use <br>`./configure --enable-gpl --enable-nonfree --enable-libx264 --enable-libx265 --extra-version=-SuperKabuki-patch`--enable-openssl
 
       There are a lot of ffmpeg configure options available. <br>
       __The superkabuki patch doesn't require any special configure options.__
